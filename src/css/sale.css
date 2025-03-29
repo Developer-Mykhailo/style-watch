@@ -198,6 +198,7 @@
     }
 
     .sale-card-subtitle {
+        max-width: 436px;
         margin-bottom: 10px;
         font-size: 32px;
         line-height: 1.12;
@@ -245,6 +246,10 @@
 
     .sale-card {
         max-width: 530px;
+    }
+
+    .sale-card-subtitle {
+        max-width: 389px;
     }
 
     .sale-card-id {

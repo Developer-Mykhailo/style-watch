@@ -1,5 +1,84 @@
-<section class="mobile-menu">
+<section class="mobile-menu-section">
   <div class="container">
-    <!-- enter your code here -->
+    <div class="mobile-menu">
+      <button
+        type="button"
+        class="mobile-menu-close-btn js-mobile-menu"
+        aria-label="button to close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="34" height="34">
+          <use href="/img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link home-active" href="./index.html">Home</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link js-mobile-menu" href="#about">About Us</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link js-mobile-menu" href="#catalog">Catalog</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link js-mobile-menu" href="#sale">Sale</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link js-mobile-menu" href="#reviews">Reviews</a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a class="mobile-menu-link js-mobile-menu" href="#contact"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social-list">
+        <li class="mobile-social-list-item">
+          <a
+            class="mobile-social-link"
+            aria-label="a link to facebook"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+          >
+            <svg class="mobile-social-img" width="18" height="18">
+              <use href="/img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-list-item">
+          <a
+            class="mobile-social-link"
+            aria-label="a link to instagram"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+          >
+            <svg class="mobile-social-img" width="18" height="18">
+              <use href="/img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-social-list-item">
+          <a
+            class="mobile-social-link"
+            aria-label="a link to youtube"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+          >
+            <svg class="mobile-social-img" width="18" height="18">
+              <use href="/img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
+
+<script>
+  // mobile-menu toggle
+  document.querySelectorAll('.js-mobile-menu').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.mobile-menu').classList.toggle('is-open');
+    });
+  });
+</script>

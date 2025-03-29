@@ -2,7 +2,7 @@
   <div class="container">
     <div class="hero-top">
       <div class="hero-top-wrapper">
-        <h1 class="hero-title">
+        <h1 class="hero-title" tabindex="0">
           Welcome to our <span class="accent">collection</span> of premium
           watches
         </h1>
@@ -17,7 +17,11 @@
         <ul class="hero-side-list">
           <li class="hero-side-item">
             <img
-              src="/img/hero/hero-avatar1.png"
+              srcset="
+                /img/reviews/reviews-victoria@1x.png 1x,
+                /img/reviews/reviews-victoria@2x.png 2x
+              "
+              src="/img/reviews/reviews-victoria@1x.png"
               alt="avatar"
               class="hero-side-avatar"
               aria-label="person's avatar"
@@ -27,7 +31,11 @@
           </li>
           <li class="hero-side-item">
             <img
-              src="/img/hero/hero-avatar2.png"
+              srcset="
+                /img/reviews/reviews-john@1x.png 1x,
+                /img/reviews/reviews-john@2x.png 2x
+              "
+              src="/img/reviews/reviews-john@1x.png"
               alt="avatar"
               class="hero-side-avatar"
               aria-label="person's avatar"
@@ -37,7 +45,11 @@
           </li>
           <li class="hero-side-item">
             <img
-              src="/img/hero/hero-avatar3.png"
+              srcset="
+                /img/reviews/reviews-anastasia@1x.png 1x,
+                /img/reviews/reviews-anastasia@2x.png 2x
+              "
+              src="/img/reviews/reviews-anastasia@1x.png"
               alt="avatar"
               class="hero-side-avatar"
               aria-label="person's avatar"
@@ -47,7 +59,12 @@
           </li>
         </ul>
 
-        <a href="#" class="hero-top-scroll">Scroll down</a>
+        <a
+          href="#footer"
+          class="hero-top-scroll"
+          aria-label="go to the page end"
+          >Scroll down</a
+        >
       </div>
     </div>
 
@@ -81,6 +98,8 @@
           src="/img/hero/hero-bg-mob-min.png"
           alt="picture of watch"
           class="hero-bg-img"
+          width="1150px"
+          height="500px"
         />
       </picture>
     </div>
