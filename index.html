@@ -879,7 +879,11 @@
     <section class="mobile-menu-section">
   <div class="container">
     <div class="mobile-menu">
-      <button type="button" class="mobile-menu-close-btn js-mobile-menu" aria-label="button to close menu">
+      <button
+        type="button"
+        class="mobile-menu-close-btn js-mobile-menu"
+        aria-label="button to close menu"
+      >
         <svg class="mobile-menu-close-icon" width="34" height="34">
           <use href="/style-watch/assets/sprite-CPXdHlte.svg#icon-close"></use>
         </svg>
@@ -889,7 +893,7 @@
           <a class="mobile-menu-link home-active" href="./index.html">Home</a>
         </li>
         <li class="mobile-menu-list-item">
-          <a class="mobile-menu-link js-mobile-menu" href="#about-us">About Us</a>
+          <a class="mobile-menu-link js-mobile-menu" href="#about">About Us</a>
         </li>
         <li class="mobile-menu-list-item">
           <a class="mobile-menu-link js-mobile-menu" href="#catalog">Catalog</a>
@@ -901,13 +905,16 @@
           <a class="mobile-menu-link js-mobile-menu" href="#reviews">Reviews</a>
         </li>
         <li class="mobile-menu-list-item">
-          <a class="mobile-menu-link js-mobile-menu" href="#contact">Contact Us</a>
+          <a class="mobile-menu-link js-mobile-menu" href="#contact"
+            >Contact Us</a
+          >
         </li>
       </ul>
       <ul class="mobile-social-list">
         <li class="mobile-social-list-item">
           <a
-            class="mobile-social-link" aria-label="a link to facebook"
+            class="mobile-social-link"
+            aria-label="a link to facebook"
             href="https://www.facebook.com/goITclub/"
             target="_blank"
           >
@@ -918,7 +925,8 @@
         </li>
         <li class="mobile-social-list-item">
           <a
-            class="mobile-social-link" aria-label="a link to instagram"
+            class="mobile-social-link"
+            aria-label="a link to instagram"
             href="https://www.instagram.com/goitclub/"
             target="_blank"
           >
@@ -928,8 +936,12 @@
           </a>
         </li>
         <li class="mobile-social-list-item">
-          <a class="mobile-social-link" aria-label="a link to youtube" 
-          href="https://www.youtube.com/c/GoIT" target="_blank">
+          <a
+            class="mobile-social-link"
+            aria-label="a link to youtube"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+          >
             <svg class="mobile-social-img" width="18" height="18">
               <use href="/style-watch/assets/sprite-CPXdHlte.svg#icon-youtube"></use>
             </svg>
@@ -937,16 +949,14 @@
         </li>
       </ul>
     </div>
-    
   </div>
 </section>
 
 <script>
-
   // mobile-menu toggle
-  document.querySelectorAll(".js-mobile-menu").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      document.querySelector(".mobile-menu").classList.toggle("is-open");
+  document.querySelectorAll('.js-mobile-menu').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelector('.mobile-menu').classList.toggle('is-open');
     });
   });
 </script>
