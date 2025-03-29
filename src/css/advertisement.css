@@ -1,83 +1,73 @@
-.advertisegment .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-.advertisegment {
+.adv_box {
     border-radius: 30px;
-    min-width: 335px;
-    height: 363px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background:  linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),  
-    url('./images/advertmob1.jpg');  
+    background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+        url("/img/advertisement/advertmob1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 60px 28px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+    }
     
-}
+    
+   
 
 
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .advertisegment {
-        height: 436px;
-        background: 
-        linear-gradient( rgba(12, 12, 12, 0.8) , rgba(12, 12, 12, 0.8) ),
-            url('./images/advertmob2.jpg');
-            background-size: cover;   
-    }
-}
+@media screen and (min-resolution: 2x) {
+    .adv_box {
 
-@media screen and (min-width: 768px) {
-    .advertisegment {
-        background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), 
-        url('./images/adventtab1.jpg');
-        background-size: cover;
-        min-width: 704px;
-        height: 425px;
-    }
-
-  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .advertisegment {
-            background: 
-            linear-gradient( rgba(12, 12, 12, 0.8) , rgba(12, 12, 12, 0.8) ),
-                url('./images/adventtab2.jpg');
+        background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+            url("/img/advertisement/advertmob2.jpg");
             background-size: cover;
+}
+}
+@media screen and (min-width: 768px) {
+    .adv_box {
+       background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+        url("/img/advertisement/adventtab1.jpg");
+        padding: 80px 64px;
+        background-size: cover;
+
+    }
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .adv_box {
+            background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+                url("/img/advertisement/adventtab2.jpg");
+            background-size: cover;
+            
+
         }
     }
 }
 
 @media screen and (min-width: 1158px) {
-    .advertisegment {
-        background: 
-            linear-gradient( rgba(12, 12, 12, 0.8) , rgba(12, 12, 12, 0.8) ),
-            url('./images/adventdesk.jpg');
-            background-size: cover;
+    .adv_box {
+        background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+            url("/img/advertisement/adventdesk.jpg");
         min-width: 1150px;
-        height: 298px;
-     
-    }
-    @media screen and (min-width: 1158px) {
-        .advertisegment .container {
+        background-size: cover;
+        background-size: cover;
         display: flex;
-        width: 100%;
         justify-content: space-between;
-        align-items: flex-start;
-       
+
+
     }
-}
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        .advertisegment {
-            background: 
-            linear-gradient( rgba(12, 12, 12, 0.8) , rgba(12, 12, 12, 0.8) ),
-                url('./images/adventdesk2.jpg'); 
+
+
+    @media (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .adv_box {
+            background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+                url("/img/advertisement/adventdesk2.jpg");
             background-size: cover;
         }
     }
 }
-
 
 .section_title_advert {
     font-family: var(--font-family);
@@ -86,37 +76,29 @@
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--background);
-     text-align: left;
-    margin-bottom: 0;
-    margin-top: 0;
     border-radius: 30px;
-    max-width: 279px;
-    height: 167px;
-
+    margin-bottom: 28px;
 }
 
 @media screen and (min-width: 768px) {
     .section_title_advert {
         font-size: 48px;
-        line-height: 0.91667;
-        height: 185px;
-        max-width: 576px;
-        margin-top: 0;
-
+        line-height: 0.9;
+    margin-bottom: 32px;
     }
 }
+
 @media screen and (min-width: 1158px) {
     .section_title_advert {
         padding-left: 54px;
-        margin-top: 0;
-        max-width: 690px;
+        margin-bottom: 0;
+       
     }
 }
 
 .span-on-section {
     color: rgba(251, 251, 251, 0.5);
 }
-
 
 .action_button_advert {
     border: 1px solid rgba(251, 251, 251, 0.15);
@@ -131,19 +113,15 @@
     text-align: center;
     color: var(--background);
     cursor: pointer;
-    margin-top: 28px;
-}
 
+}
 
 @media screen and (min-width: 1158px) {
     .action_button_advert {
-       margin-top: 0;
-       margin-right: 80px;  
-       margin-bottom: auto;
-       
+        margin-top: 0;
+        margin-right: 16px;
+        margin-bottom: auto;
     }
-
-   
 }
 
 .action_button_advert:hover,
@@ -151,6 +129,5 @@
     background: var(--background);
     color: var(--main);
     border: 1px solid rgba(251, 251, 251, 0.15);
-border-radius: 16px;
-
+    border-radius: 16px;
 }
